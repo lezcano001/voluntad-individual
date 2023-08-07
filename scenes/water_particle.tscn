@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://drldsykfu3pk1"]
+
+[ext_resource type="Texture2D" uid="uid://bd2oedm0aq653" path="res://assets/draws/ship_particles1.png" id="1_6imeo"]
+[ext_resource type="Script" path="res://scenes/water_particle.gd" id="2_x16je"]
+
+[node name="WaterParticle" type="Sprite2D"]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_6imeo")
+script = ExtResource("2_x16je")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.7
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

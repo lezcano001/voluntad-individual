@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6o3aiq035ost"]
+
+[ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_741ui"]
+
+[node name="SodaBottle" instance=ExtResource("1_741ui")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(384, 0, 64, 64)

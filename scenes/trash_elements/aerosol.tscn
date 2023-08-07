@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://n3g2ks2u524a"]
+
+[ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_3g8t6"]
+[ext_resource type="Script" path="res://scenes/trash_elements/scripts/aerosol.gd" id="2_7xycr"]
+
+[node name="Aerosol" instance=ExtResource("1_3g8t6")]
+script = ExtResource("2_7xycr")
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(768, 0, 64, 64)

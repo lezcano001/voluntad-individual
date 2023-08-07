@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckpphafodhyko"]
+
+[ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_1s56a"]
+
+[node name="GenericCan" instance=ExtResource("1_1s56a")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(640, 0, 64, 64)

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://kp7cqp6p6r6m"]
+
+[ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_cfiy8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_426n4"]
+size = Vector2(50, 70)
+
+[node name="MilkBottle" instance=ExtResource("1_cfiy8")]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(64, 0, 64, 64)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(1.19209e-06, 2.98023e-06)
+shape = SubResource("RectangleShape2D_426n4")

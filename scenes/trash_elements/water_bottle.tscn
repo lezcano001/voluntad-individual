@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b8ouap5gcykwc"]
+
+[node name="WaterBottle"]
+
+[node name="Sprite2D" parent="." index="0"]
+region_rect = Rect2(0, 0, 64, 64)
