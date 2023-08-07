@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cflcjsad6lowx"]
+[gd_scene load_steps=4 format=3 uid="uid://cflcjsad6lowx"]
 
 [ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_1jry7"]
+[ext_resource type="Script" path="res://scenes/trash_elements/scripts/soda_can.gd" id="2_23p5w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sv8n1"]
+size = Vector2(20, 43)
 
 [node name="SodaCan" instance=ExtResource("1_1jry7")]
+script = ExtResource("2_23p5w")
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(704, 0, 64, 64)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 11.5)
+shape = SubResource("RectangleShape2D_sv8n1")

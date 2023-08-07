@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://ba6wj0t3l1mfl"]
+[gd_scene load_steps=3 format=3 uid="uid://ba6wj0t3l1mfl"]
 
 [ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_2skro"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wradl"]
+size = Vector2(66, 36)
 
 [node name="Newspaper" instance=ExtResource("1_2skro")]
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(256, 0, 64, 64)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_wradl")

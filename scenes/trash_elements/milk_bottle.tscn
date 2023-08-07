@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://kp7cqp6p6r6m"]
+[gd_scene load_steps=4 format=3 uid="uid://kp7cqp6p6r6m"]
 
 [ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_cfiy8"]
+[ext_resource type="Script" path="res://scenes/trash_elements/scripts/milk_bottle.gd" id="2_klfqd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_426n4"]
 size = Vector2(50, 70)
 
 [node name="MilkBottle" instance=ExtResource("1_cfiy8")]
+script = ExtResource("2_klfqd")
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(64, 0, 64, 64)

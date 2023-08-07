@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://oywxnrrfdntk"]
+[gd_scene load_steps=4 format=3 uid="uid://oywxnrrfdntk"]
 
 [ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_gfjs7"]
+[ext_resource type="Script" path="res://scenes/trash_elements/scripts/straw.gd" id="2_gd7wx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xesjw"]
+size = Vector2(7, 49)
 
 [node name="Straw" instance=ExtResource("1_gfjs7")]
+script = ExtResource("2_gd7wx")
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(960, 0, 64, 64)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0.5, 7.5)
+shape = SubResource("RectangleShape2D_xesjw")

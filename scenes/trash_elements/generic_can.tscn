@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://ckpphafodhyko"]
+[gd_scene load_steps=4 format=3 uid="uid://ckpphafodhyko"]
 
 [ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_1s56a"]
+[ext_resource type="Script" path="res://scenes/trash_elements/scripts/generic_can.gd" id="2_5vxa1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1w68"]
+size = Vector2(29, 50)
 
 [node name="GenericCan" instance=ExtResource("1_1s56a")]
+script = ExtResource("2_5vxa1")
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(640, 0, 64, 64)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_l1w68")

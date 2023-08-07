@@ -1,8 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://ce4w7idoct1b1"]
+[gd_scene load_steps=4 format=3 uid="uid://ce4w7idoct1b1"]
 
 [ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_xwr6p"]
+[ext_resource type="Script" path="res://scenes/trash_elements/scripts/water_bottle.gd" id="2_swmfj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7iwxd"]
+size = Vector2(20, 54)
 
 [node name="WaterBottle" instance=ExtResource("1_xwr6p")]
+script = ExtResource("2_swmfj")
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(0, 0, 64, 64)
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_7iwxd")
