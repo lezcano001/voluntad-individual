@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://fehfkas0cfn7"]
+
+[ext_resource type="Texture2D" uid="uid://dcje4hxxcc17k" path="res://scenes/interfaces/buttons/ButtonAtlasTexture.tres" id="1_g303h"]
+
+[node name="MenuButton" type="TextureButton"]
+custom_minimum_size = Vector2(64, 64)
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("1_g303h")
+texture_hover = ExtResource("1_g303h")
+ignore_texture_size = true
+stretch_mode = 0

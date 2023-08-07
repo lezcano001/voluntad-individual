@@ -26,7 +26,7 @@ func _input(event):
 			
 			# agregar peso al barco
 			
-			deletedTrash.call_deferred("queue_free")
+			deletedTrash.call("queue_free")
 
 func _physics_process(delta):
 	arrowNode.look_at(get_global_mouse_position())
