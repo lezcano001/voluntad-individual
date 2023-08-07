@@ -1,6 +1,8 @@
-[gd_scene format=3 uid="uid://b8ouap5gcykwc"]
+[gd_scene load_steps=2 format=3 uid="uid://ce4w7idoct1b1"]
 
-[node name="WaterBottle"]
+[ext_resource type="PackedScene" uid="uid://c0j6lwikrx7on" path="res://scenes/trash_elements/trash_element.tscn" id="1_xwr6p"]
+
+[node name="WaterBottle" instance=ExtResource("1_xwr6p")]
 
 [node name="Sprite2D" parent="." index="0"]
 region_rect = Rect2(0, 0, 64, 64)
